@@ -1,6 +1,6 @@
 import {NextApiRequest, NextApiResponse} from 'next';
 
-import {mailOptions} from '../../util/nodemailer';
+import {mailOptions, transporter} from '../../util/nodemailer';
 
 const verifyRecaptcha = async (token: string) => {
   const url = new URL('https://www.google.com/recaptcha/api/siteverify');
@@ -20,19 +20,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
       const recaptchaResponse = await verifyRecaptcha(token);
       if (recaptchaResponse.success && recaptchaResponse.action === 'contactFormSubmit') {
-        // await transporter.sendMail({
-        //   ...mailOptions,
-        //   from: email,
-        //   subject: 'Web CV - Mailer',
-        //   text: `${name} says: message`,
-        //   html: `<p>${message}</p><br><b>${name}</b>`,
-        // });
-        await console.log('transporter.sendMail', {
+        await transporter.sendMail({
           ...mailOptions,
           from: email,
           subject: 'Web CV - Mailer',
-          text: `${name} says: ${message}`,
-          html: `<p>${message}</p><br><b>- ${name}</b>`,
+          text: `${name} says: message`,
+          html: `<p>${message}</p><br><b>${name}</b>`,
         });
       }
     } catch (error: unknown) {
