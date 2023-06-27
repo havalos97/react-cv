@@ -1,9 +1,9 @@
-import { ChevronUpIcon } from '@heroicons/react/24/outline';
+import {ChevronUpIcon} from '@heroicons/react/24/outline';
 
-import { SectionId } from '../../data/data';
+import {SectionId} from '../../data/data';
 import Socials from '../Socials';
 
-const getYear = () => new Date().getFullYear()
+const getYear = () => new Date().getFullYear();
 
 const Footer = () => (
   <div className="relative bg-neutral-900 px-4 pb-6 pt-12 sm:px-8 sm:pb-8 sm:pt-14">
@@ -18,7 +18,7 @@ const Footer = () => (
       <div className="flex gap-x-4 text-neutral-500">
         <Socials />
       </div>
-      <span className="text-sm text-neutral-700">© Copyright { getYear() } Hector Avalos</span>
+      <span className="text-sm text-neutral-700">© Copyright {getYear()} Hector Avalos</span>
     </div>
   </div>
 );

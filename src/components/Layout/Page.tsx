@@ -1,11 +1,11 @@
-import { NextPage } from 'next';
+import {NextPage} from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { memo, PropsWithChildren } from 'react';
+import {useRouter} from 'next/router';
+import {memo, PropsWithChildren} from 'react';
 
-import { IHomepageMeta } from '../../data/dataDef';
+import {IHomepageMeta} from '../../data/dataDef';
 
-const Page: NextPage<PropsWithChildren<IHomepageMeta>> = memo(({ children, title, description }) => {
+const Page: NextPage<PropsWithChildren<IHomepageMeta>> = memo(({children, title, description}) => {
   const {asPath: pathname} = useRouter();
 
   return (

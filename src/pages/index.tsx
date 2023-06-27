@@ -8,12 +8,12 @@ import Hero from '../components/Sections/Hero';
 import Portfolio from '../components/Sections/Portfolio';
 import Resume from '../components/Sections/Resume';
 import Testimonials from '../components/Sections/Testimonials';
-import { homePageMeta } from '../data/data';
+import {homePageMeta} from '../data/data';
 
 const Header = dynamic(() => import('../components/Sections/Header'), {ssr: false});
 
 const Home = () => {
-  const { title, description } = homePageMeta;
+  const {title, description} = homePageMeta;
   return (
     <Page description={description} title={title}>
       <Header />

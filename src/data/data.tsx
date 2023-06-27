@@ -1,17 +1,17 @@
-import { 
+import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
   MapIcon,
   SparklesIcon,
- } from '@heroicons/react/24/outline';
+} from '@heroicons/react/24/outline';
 
+import CodeWarsIcon from '../components/Icon/Codewars';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import CodeWarsIcon from '../components/Icon/Codewars';
 import heroImage from '../images/header-background.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
@@ -19,25 +19,25 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
-import { 
+import {
+  ContactType,
   IAbout,
   IContactSection,
-  ContactType,
   IHero,
   IHomepageMeta,
   IPortfolioItem,
-  SkillGroup,
   ISocial,
   ITestimonialSection,
   ITimelineItem,
- } from './dataDef';
+  SkillGroup,
+} from './dataDef';
 
 /**
  * Page meta data
  */
 export const homePageMeta: IHomepageMeta = {
   title: 'Hector Avalos - CV',
-  description: "React Resume - Hector Avalos",
+  description: 'React Resume - Hector Avalos',
 };
 
 /**
@@ -54,7 +54,7 @@ export const SectionId = {
   Testimonials: 'testimonials',
 } as const;
 
-export type SectionId = typeof SectionId[keyof typeof SectionId];
+export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
  * Hero section
@@ -65,13 +65,14 @@ export const heroData: IHero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Full Stack Software Engineer (BE-Heavy)</strong> based on Guadalajara, MX. My last job
-        was at <strong className="text-stone-100">Gold Media Tech LLC</strong> helping elder americans find the Medicare Plan
-        that covers all/most of their needs (drugs coverage, hospitals, doctors, etc) based off of their personalized selection.
+        I'm a <strong className="text-stone-100">Full Stack Software Engineer (BE-Heavy)</strong> based on Guadalajara,
+        MX. My last job was at <strong className="text-stone-100">Gold Media Tech LLC</strong> helping elder americans
+        find the Medicare Plan that covers all/most of their needs (drugs coverage, hospitals, doctors, etc) based off
+        of their personalized selection.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time I love to be learning new stuff, for instance, right now I'm learning about solar energy and how to implement
-        it to make my house off-grid.
+        In my free time time I love to be learning new stuff, for instance, right now I'm learning about solar energy
+        and how to implement it to make my house off-grid.
       </p>
     </>
   ),
@@ -98,11 +99,11 @@ export const aboutData: IAbout = {
   how videogames were made. So I started reading about software development. The first programming language I learned was C.
   My main goal is to become a Tech Lead, I've been trying to develop my soft-skills to become a good Tech Lead.`,
   aboutItems: [
-    { label: 'Location', text: 'Guadalajara, MX.', Icon: MapIcon },
-    { label: 'Age', text: '26', Icon: CalendarIcon },
-    { label: 'Interests', text: 'Cars, Software Engineering, Electronics.', Icon: SparklesIcon },
-    { label: 'Study', text: 'University of Guadalajara', Icon: AcademicCapIcon },
-    { label: 'Last Employment', text: 'Gold Media Tech LLC.', Icon: BuildingOffice2Icon },
+    {label: 'Location', text: 'Guadalajara, MX.', Icon: MapIcon},
+    {label: 'Age', text: '26', Icon: CalendarIcon},
+    {label: 'Interests', text: 'Cars, Software Engineering, Electronics.', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Guadalajara', Icon: AcademicCapIcon},
+    {label: 'Last Employment', text: 'Gold Media Tech LLC.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -216,9 +217,10 @@ export const experience: ITimelineItem[] = [
     title: 'Software Engineer',
     content: (
       <p>
-        Working for a Medicare Advisors company. I’ve written code for both Front and Back End using technologies such as VueJS
-        (NuxtJS/Typescript) and NestJS (Typescript). I have used technologies like Swagger (OpenAPI), Redis, Aptible, Netlify,
-        PostgreSQL, Sentry.io, Airtable, Salesforce (Process Builder, SOQL queries, integration with NodeJS).
+        Working for a Medicare Advisors company. I’ve written code for both Front and Back End using technologies such
+        as VueJS (NuxtJS/Typescript) and NestJS (Typescript). I have used technologies like Swagger (OpenAPI), Redis,
+        Aptible, Netlify, PostgreSQL, Sentry.io, Airtable, Salesforce (Process Builder, SOQL queries, integration with
+        NodeJS).
       </p>
     ),
   },
@@ -228,12 +230,12 @@ export const experience: ITimelineItem[] = [
     title: 'Software developer',
     content: (
       <p>
-        R&D Software Developer. I used to develop apps that helped the Automation area in their daily tasks (PLCs, HMIs).
-        I wrote new code for their internal management system, which was initially written in Java, then we had to migrate it
-        to PHP because the company started to grow a lot and the Java code had a lot of tech-debt. After that we decided it
-        was time to upgrade the system so we “translated” again the code to ReactJs for the Front End and
-        Django / Django-REST-Framework for the Back End) as well as deploying new changes to the local server (Using tools like
-        docker/docker-compose, nginx and Gunicorn).
+        R&D Software Developer. I used to develop apps that helped the Automation area in their daily tasks (PLCs,
+        HMIs). I wrote new code for their internal management system, which was initially written in Java, then we had
+        to migrate it to PHP because the company started to grow a lot and the Java code had a lot of tech-debt. After
+        that we decided it was time to upgrade the system so we “translated” again the code to ReactJs for the Front End
+        and Django / Django-REST-Framework for the Back End) as well as deploying new changes to the local server (Using
+        tools like docker/docker-compose, nginx and Gunicorn).
       </p>
     ),
   },
@@ -257,7 +259,7 @@ export const testimonial: ITestimonialSection = {
     },
     {
       name: 'Angel Gonzalez',
-      text: 'I\'ve had the opportunity to work with Hector for a few years, he has proven to be a great team player, supporting other team members with his expertise. He\'s able to be a good fit for any position he desires, as he has an extensive knowledge provided for the number of software solutions he has helped with, always with the utmost willingness and commitment.',
+      text: "I've had the opportunity to work with Hector for a few years, he has proven to be a great team player, supporting other team members with his expertise. He's able to be a good fit for any position he desires, as he has an extensive knowledge provided for the number of software solutions he has helped with, always with the utmost willingness and commitment.",
       image: '/testimonial-3.jpg',
     },
   ],
@@ -269,7 +271,7 @@ export const testimonial: ITestimonialSection = {
 
 export const contact: IContactSection = {
   headerText: 'Get in touch.',
-  description: 'Please feel free to contact me in case you\'re interested in my profile.',
+  description: "Please feel free to contact me in case you're interested in my profile.",
   items: [
     {
       type: ContactType.Email,
@@ -298,9 +300,9 @@ export const contact: IContactSection = {
  * Social items
  */
 export const socialLinks: ISocial[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/havalos97' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/havalos97/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/avalos.gerardo97/' },
-  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/hecaval97' },
-  { label: 'CodeWars', Icon: CodeWarsIcon, href: 'https://codewars.com/users/havalos97' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/havalos97'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/havalos97/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/avalos.gerardo97/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/hecaval97'},
+  {label: 'CodeWars', Icon: CodeWarsIcon, href: 'https://codewars.com/users/havalos97'},
 ];

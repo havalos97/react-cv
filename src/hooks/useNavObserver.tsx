@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 
-import { headerID } from '../components/Sections/Header';
-import { SectionId } from '../data/data';
+import {headerID} from '../components/Sections/Header';
+import {SectionId} from '../data/data';
 
 export const useNavObserver = (selectors: string, handler: (section: SectionId | null) => void) => {
   useEffect(() => {
@@ -55,5 +55,5 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
     return () => {
       observer.disconnect();
     };
-  }, []); // Dependency here is the post content.
+  }); // Dependency here is the post content.
 };

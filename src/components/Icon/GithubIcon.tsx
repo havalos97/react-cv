@@ -1,4 +1,4 @@
-import Icon, { IconProps } from './Icon';
+import Icon, {IconProps} from './Icon';
 
 const GithubIcon = (props: IconProps) => (
   <Icon {...props}>

@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
+import {ReactNode} from 'react';
 
-const ResumeSection = ({ title, children }: { title: string; children?: ReactNode }) => {
+const ResumeSection = ({title, children}: {title: string; children?: ReactNode}) => {
   return (
     <div className="grid grid-cols-1 gap-y-4 py-8 first:pt-0 last:pb-0  md:grid-cols-4">
       <div className="col-span-1 flex justify-center md:justify-start">

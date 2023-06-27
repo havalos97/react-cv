@@ -1,7 +1,7 @@
-import { StaticImageData } from 'next/image';
-import { FC, ForwardRefExoticComponent, SVGProps } from 'react';
+import {StaticImageData} from 'next/image';
+import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
 
-import { IconProps } from '../components/Icon/Icon';
+import {IconProps} from '../components/Icon/Icon';
 
 export interface IHomepageMeta {
   title: string;
@@ -127,7 +127,7 @@ export const ContactType = {
   Instagram: 'Instagram',
 } as const;
 
-export type TContactType = typeof ContactType[keyof typeof ContactType];
+export type TContactType = (typeof ContactType)[keyof typeof ContactType];
 
 export interface IContactItem {
   type: TContactType;

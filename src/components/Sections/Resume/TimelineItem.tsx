@@ -1,7 +1,7 @@
-import { ITimelineItem } from '../../../data/dataDef';
+import {ITimelineItem} from '../../../data/dataDef';
 
-const TimelineItem = ({ item }: { item: ITimelineItem }) => {
-  const { title, date, location, content } = item;
+const TimelineItem = ({item}: {item: ITimelineItem}) => {
+  const {title, date, location, content} = item;
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
       <div className="flex flex-col pb-4">

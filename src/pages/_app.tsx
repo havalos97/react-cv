@@ -1,9 +1,9 @@
 import 'tailwindcss/tailwind.css';
 import '../globalStyles.scss';
 
-import type { AppProps } from 'next/app';
-import { memo } from 'react';
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import type {AppProps} from 'next/app';
+import {memo} from 'react';
+import {GoogleReCaptchaProvider} from 'react-google-recaptcha-v3';
 
 const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
   return (
@@ -14,8 +14,7 @@ const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
         defer: false,
         appendTo: 'head',
         nonce: undefined,
-      }}
-    >
+      }}>
       <Component {...pageProps} />
     </GoogleReCaptchaProvider>
   );
