@@ -24,7 +24,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           ...mailOptions,
           from: email,
           subject: 'Web CV - Mailer',
-          text: `${name} says: message`,
+          text: `${name} says: ${message}`,
           html: `<p>${message}</p><br><b>${name}</b>`,
         });
       }
