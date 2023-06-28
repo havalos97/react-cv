@@ -68,10 +68,10 @@ export const heroData: IHero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Full Stack Software Engineer (BE-Heavy)</strong> based on Guadalajara, JAL,
-        MX. My last job was at <strong className="text-stone-100">Gold Media Tech LLC</strong> helping elder americans
-        find the Medicare Plan that covers all/most of their needs (drugs coverage, hospitals, doctors, etc) based off
-        of their personalized selection.
+        I'm a <strong className="text-stone-100">Full Stack Software Engineer (BE-Heavy)</strong> based on Guadalajara,
+        JAL, MX. My last job was at <strong className="text-stone-100">Gold Media Tech LLC</strong> helping elder
+        americans find the Medicare Plan that covers all/most of their needs (drugs coverage, hospitals, doctors, etc)
+        based off of their personalized selection.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time I love to be learning new stuff, for instance, right now I'm learning about solar energy
