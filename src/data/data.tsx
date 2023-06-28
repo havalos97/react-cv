@@ -19,6 +19,9 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+import testimonial1 from '../images/testimonial-1.jpg';
+import testimonial2 from '../images/testimonial-2.jpg';
+import testimonial3 from '../images/testimonial-3.jpg';
 import {
   ContactType,
   IAbout,
@@ -65,7 +68,7 @@ export const heroData: IHero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Full Stack Software Engineer (BE-Heavy)</strong> based on Guadalajara,
+        I'm a <strong className="text-stone-100">Full Stack Software Engineer (BE-Heavy)</strong> based on Guadalajara, JAL,
         MX. My last job was at <strong className="text-stone-100">Gold Media Tech LLC</strong> helping elder americans
         find the Medicare Plan that covers all/most of their needs (drugs coverage, hospitals, doctors, etc) based off
         of their personalized selection.
@@ -206,7 +209,6 @@ export const education: ITimelineItem[] = [
     date: 'Aug 2013 - Jul 2017',
     location: 'Centro de Enseñanza Técnica Industrial.',
     title: 'Tecnólogo en Informática y Computación',
-    content: <></>,
   },
 ];
 
@@ -248,19 +250,19 @@ export const testimonial: ITestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Luis Montoya',
+      name: 'Luis Montoya (Ex-Cornershop By Uber)',
       text: 'I have known Hector for several years now, I am surprised by his ability and willingness to develop and learn, he is passionate about readable code without neglecting the performance part, he is always focused on proposing solutions.',
-      image: '/testimonial-1.jpg',
+      image: testimonial1,
     },
     {
-      name: 'Angel Moreno',
+      name: 'Angel Moreno (Consejo de la Judicatura del Estado de Jalisco)',
       text: 'Héctor está siempre dispuesto a ayudar a los demás, como desarrollador debo decir que le tengo una gran admiración ha sido un ejemplo para mí y debo decir que sus habilidades son increíbles, dignas de un buen senior.',
-      image: '/testimonial-2.jpg',
+      image: testimonial2,
     },
     {
-      name: 'Angel Gonzalez',
+      name: 'Angel Gonzalez (Oracle)',
       text: "I've had the opportunity to work with Hector for a few years, he has proven to be a great team player, supporting other team members with his expertise. He's able to be a good fit for any position he desires, as he has an extensive knowledge provided for the number of software solutions he has helped with, always with the utmost willingness and commitment.",
-      image: '/testimonial-3.jpg',
+      image: testimonial3,
     },
   ],
 };
