@@ -84,11 +84,23 @@ export const heroData: IHero = {
         In my free time time I love to learn new stuff. Also I love playing videogames, two of my
         favorite videogames are &nbsp;
         <strong className="text-stone-100">
-          <a href="https://en.wikipedia.org/wiki/Silent_Hill_2">Silent Hill 2</a>
+          <a
+            href="https://en.wikipedia.org/wiki/Silent_Hill_2"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Silent Hill 2
+          </a>
         </strong>
         &nbsp;and&nbsp;
         <strong className="text-stone-100">
-          <a href="https://en.wikipedia.org/wiki/Stray_(video_game)">Stray</a>
+          <a
+            href="https://en.wikipedia.org/wiki/Stray_(video_game)"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Stray
+          </a>
         </strong>
       </p>
     </>
