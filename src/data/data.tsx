@@ -60,8 +60,8 @@ export const SectionId = {
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 const getAge = (): string => {
-  var ageDifMs = Date.now() - new Date("1997-04-17").getTime();
-  var ageDate = new Date(ageDifMs);
+  const ageDifMs = Date.now() - new Date("1997-04-17").getTime();
+  const ageDate = new Date(ageDifMs);
   return Math.abs(ageDate.getUTCFullYear() - 1970).toString();
 }
 
