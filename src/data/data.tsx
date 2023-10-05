@@ -75,7 +75,7 @@ export const heroData: IHero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a <strong className="text-stone-100">Software Engineer</strong> based on Guadalajara,
-        Jalisco, México. Currently working at &nbsp;
+        Jalisco, México. Currently working @ &nbsp;
         <strong className="text-stone-100">
           <a href="https://www.epam.com/">EPAM Systems México</a>
         </strong>.
@@ -144,12 +144,12 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'Spanish',
+        name: 'Spanish: Native',
         level: 10,
       },
       {
-        name: 'English',
-        level: 9,
+        name: 'English: C1',
+        level: 8.5,
       },
     ],
   },
@@ -158,11 +158,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'VueJS',
-        level: 9,
+        level: 8,
       },
       {
         name: 'Typescript',
-        level: 7,
+        level: 8,
       },
       {
         name: 'NuxtJS',
@@ -179,15 +179,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'NestJS',
-        level: 10,
-      },
-      {
-        name: 'Node.js',
         level: 9,
       },
       {
+        name: 'Node.js',
+        level: 8,
+      },
+      {
         name: 'Django',
-        level: 7,
+        level: 6,
       },
       {
         name: '.NET',
@@ -252,14 +252,19 @@ export const experience: ITimelineItem[] = [
   {
     date: 'Jul 2023 - Currently',
     location: 'Guadalajara, Jalisco. MX. (Remote)',
-    title: 'Full Stack Software Engineer @ EPAM Systems México',
+    title: 'Software Engineer @ EPAM Systems México',
     content: (
-      <p>
-        Working in a project for an EPAM client. In this project I've been using technologies like
-        ReactJS, Storybook, Material UI, Apollo GraphQL, AWS DynamoDB, Docker and docker-compose and
-        tools like Figma, Atlassian Jira and Atlassian Confluence, all this implemented in a
-        serverless architecture. The rendering of the project is dynamic which requires us developers
-        to write "generic" components that depend on the JSON schema provided to the app.
+      <p className="text-justify">
+        Working on a project for one of the top pharmaceutical companies in the world.
+        In this project, we've been using technologies like TypeScript, ReactJS, Storybook,
+        MaterialUI, Apollo GraphQL, Docker/Docker-Compose, AWS (Lambdas, Cognito, S3 or DynamoDB
+        for example). Also, we've been using tools tools like Figma, Jira and Confluence. 
+        The component rendering of the project has to be dynamic, which requires "generic"
+        components to be written that depend on the&nbsp;
+        <a href="https://json-schema.org" rel="noopener noreferrer" style={{color: 'blue', textDecoration: 'underline'}} target="_blank">
+          JSON schema
+        </a>&nbsp;
+        and JSON UI config provided to the app by the GraphQL backend.
       </p>
     ),
   },
@@ -268,7 +273,7 @@ export const experience: ITimelineItem[] = [
     location: 'Boston, MA. (Remote)',
     title: 'Software Engineer @ Gold Media Tech LLC',
     content: (
-      <p>
+      <p className="text-justify">
         Working for a Medicare Advisors company. I’ve written code for both Front and Back End using technologies such
         as VueJS (NuxtJS/Typescript) and NestJS (Typescript). I have used technologies like Swagger (OpenAPI), Redis,
         Aptible, Netlify, PostgreSQL, Sentry.io, Airtable, Salesforce (Process Builder, SOQL queries, integration with
@@ -281,7 +286,7 @@ export const experience: ITimelineItem[] = [
     location: 'Zapopan, Jalisco. MX.',
     title: 'Software developer @ Vectralis-Baumann Automation',
     content: (
-      <p>
+      <p className="text-justify">
         R&D Software Developer. I used to develop apps that helped the Automation area in their daily tasks (PLCs,
         HMIs). I wrote new code for their internal management system, which was initially written in Java, then we had
         to migrate it to PHP because the company started to grow a lot and the Java code had a lot of tech-debt. After
@@ -320,7 +325,6 @@ export const testimonial: ITestimonialSection = {
 /**
  * Contact section
  */
-
 export const contact: IContactSection = {
   headerText: 'Get in touch.',
   description: "Please feel free to contact me in case you're interested in my profile.",
